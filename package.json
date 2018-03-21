@@ -1,0 +1,14 @@
+{
+  "name": "cryptocurrency",
+  "version": "1.0.0",
+  "description": "Simple cryptocurrency implementation",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jlasic",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
