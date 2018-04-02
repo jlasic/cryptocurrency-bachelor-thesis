@@ -7,11 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jlasic",
-  "repository" : { "type" : "git"
-  , "url" : "https://github.com/jlasic/cryptocurrency-zavrsni.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlasic/cryptocurrency-zavrsni.git"
   },
   "license": "ISC",
   "dependencies": {
+    "elliptic": "^6.4.0",
     "express": "^4.16.3",
     "ws": "^5.1.0"
   }
