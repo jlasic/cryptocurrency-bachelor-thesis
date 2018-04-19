@@ -1,0 +1,26 @@
+<html>
+   <body>
+        <form action = "/send" method = "GET">
+            Address: <input type="text" name="address">
+            Amount: <input type="number" name="amount">
+            <input type = "submit" value = "Send">
+         </form>
+
+       <p>
+            <button type="button" onclick="getBalance()">Get Balance</button>
+            <p id="balance"></p>
+       </p>
+      
+      <script>
+          function getBalance(){
+            let xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200)
+                    document.getElementById("balance").innerHTML = "Current balance: " + this.responseText;
+            };
+            xhttp.open("GET", "/wallet/balance", true);
+            xhttp.send();
+          }
+      </script>
+   </body>
+</html>
